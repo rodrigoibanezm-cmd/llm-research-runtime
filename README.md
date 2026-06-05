@@ -1,18 +1,23 @@
 # LLM Research Runtime
 
-Sistema para observar que narrativas construyen los modelos de lenguaje sobre marcas, productos y servicios en el momento de decision del consumidor.
+## Qué es esto
 
-No es GEO. No optimiza visibilidad en LLMs. Es investigacion de mercado aplicada a una nueva fuente observable.
+Un sistema para ejecutar prompts estandarizados en múltiples modelos de lenguaje y guardar las respuestas como observaciones en Neon.
 
-## Tesis
+Primera etapa: capturar.
+Después: analizar.
 
-Cuando un consumidor consulta un LLM antes de decidir una compra de alta implicancia, recibe una narrativa sintetizada sobre la marca.
+---
 
-Esa narrativa ya existe, ya influye, y hoy no se mide sistematicamente.
-
-Los LLMs no solo entregan informacion. Entregan interpretacion.
-
-## Principio de arquitectura
+## Principio central
 
 ```txt
-Redis  -> personas estandarizadas + configuracion de prompts + variables de
+Redis -> personas + prompts + variables de control
+Neon  -> observaciones (respuestas crudas)
+LLM   -> ejecuta el prompt y devuelve respuesta
+```
+
+---
+
+## Stack
+
