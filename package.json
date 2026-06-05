@@ -1,0 +1,17 @@
+{
+  "name": "llm-research-runtime",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.1",
+    "openai": "^5.0.0"
+  },
+  "devDependencies": {
+    "vercel": "^43.0.0"
+  }
+}
