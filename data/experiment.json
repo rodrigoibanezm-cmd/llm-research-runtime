@@ -16,4 +16,18 @@
     ],
     "model_tier": [
       "premium",
-      "
+      "free_fast"
+    ]
+  },
+  "model_tier_map": {
+    "openai": {
+      "premium": "gpt-4o",
+      "free_fast": "gpt-4o-mini"
+    }
+  },
+  "scenario_prompt_map": {
+    "neutral_exploratorio": "broad",
+    "comprador_activo": "comparative",
+    "usuario_con_friccion": "decision"
+  }
+}
