@@ -1,0 +1,19 @@
+{
+  "experiment_id": "dongfeng_mvp_v1",
+  "run_id": "dongfeng_mvp_v1",
+  "fixed_controls": {
+    "interest_level": "high",
+    "mode": "base",
+    "session_type": "new",
+    "conversation_depth": "single_turn",
+    "language": "es-CL"
+  },
+  "manipulated_variables": {
+    "scenario": [
+      "neutral_exploratorio",
+      "comprador_activo",
+      "usuario_con_friccion"
+    ],
+    "model_tier": [
+      "premium",
+      "
