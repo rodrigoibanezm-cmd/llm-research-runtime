@@ -1,0 +1,10 @@
+[
+  {
+    "id": "neutral_exploratorio",
+    "label": "Neutral / exploratorio",
+    "context": "Estoy empezando a mirar opciones para comprar un auto nuevo. Todavía no tengo una marca decidida y quiero entender qué alternativas conviene mirar en Chile."
+  },
+  {
+    "id": "comprador_activo",
+    "label": "Comprador activo",
+    "context": "Ya estuve mirando varias opciones y una de las marcas que apareció es Dongfeng. Me interesa
