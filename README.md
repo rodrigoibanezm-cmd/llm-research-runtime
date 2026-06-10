@@ -1,23 +1,29 @@
-# LLM Research Runtime
+# llm-research-runtime — MVP del Runner de Prompts
 
-## Qué es esto
+## Objetivo
 
-Un sistema para ejecutar prompts estandarizados en múltiples modelos de lenguaje y guardar las respuestas como observaciones en Neon.
+Ejecutar un set de prompts contra múltiples LLMs y guardar la respuesta cruda de cada uno en Neon, sin scoring ni clasificación todavía.
 
-Primera etapa: capturar.
-Después: analizar.
+Esto valida el pipeline completo:
+
+```txt
+prompt -> modelo -> almacenamiento
+```
+
+Caso demo: Dongfeng / autos chinos en Chile.
+
+MVP inicial:
+
+```txt
+3 personas x 3 prompts x 1 provider = 9 observaciones
+```
+
+Primero se implementa OpenAI de punta a punta. Después se agrega Gemini duplicando el adapter.
 
 ---
 
 ## Principio central
 
-```txt
-Redis -> personas + prompts + variables de control
-Neon  -> observaciones (respuestas crudas)
-LLM   -> ejecuta el prompt y devuelve respuesta
-```
+Este proyecto no analiza todavía.
 
----
-
-## Stack
-
+Solo captura respuestas cr
